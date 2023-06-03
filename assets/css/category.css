@@ -1,39 +1,52 @@
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* General style  */
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 15px;
+}
+.image{
+  position: relative;
+  margin: 15px;
+}
+.image img{
+  max-width: 100%;
+  height: auto;
+}
+
+.text-overlay{
+  position: absolute;
+  top: 25%;
+  padding: 10px;
+}
+
+.text-overlay h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* mobile view */
+ @media (max-width:900px){
+  .container{
+    flex-direction: column;
   }
+  .text-overlay{
+  width:10%;
+  top:10%;
+  margin: 0 auto;
+ 
+}
+.text-overlay h4{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.btcategory{
+  font-size: 15px;
+  ;
+  display: inline-block;
   
-  .image {
-    position: relative;
-    display: flex;
-  }
-  
-  .image img {
-    max-width: 800%;
-    display: flex;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black;
-    z-index: 5;
-  }
-  
-  .text-overlay h1 {
-    font-size: 24px;
-    right: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .text-overlay .cta-button {
-   
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
+}
+ }
