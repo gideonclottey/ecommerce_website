@@ -1,0 +1,10 @@
+.Related-news {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Related-image img {
+    margin: 20px;
+    width: 350px;
+}
